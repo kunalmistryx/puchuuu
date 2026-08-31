@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For My Puchuuuu 🎀</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#09070a;color:#fff7fa;font-family:"DM Sans",sans-serif}
+button{font:inherit}.screen{min-height:100svh}.hidden{display:none!important}
+#intro{position:fixed;inset:0;z-index:99;background:radial-gradient(circle at 50% 45%,#391a2b 0,#160b12 40%,#09070a 75%);display:grid;place-items:center;text-align:center;overflow:hidden}
+.introbox{padding:30px}.tiny{letter-spacing:4px;text-transform:uppercase;font-size:11px;color:#e8b3c7}.intro h1{font:600 clamp(48px,9vw,100px)/.95 "Playfair Display",serif;margin:18px 0}.intro p{color:#d9bfc9;margin-bottom:30px}
+.open{border:0;border-radius:999px;padding:15px 25px;background:#fff;color:#28121d;font-weight:700;cursor:pointer;box-shadow:0 0 0 8px #ffffff10,0 15px 50px #0008;transition:.25s}.open:hover{transform:translateY(-3px) scale(1.02)}
+#site{overflow:hidden;background:linear-gradient(180deg,#0b080b,#170b12 38%,#fff7fa 68%,#fff7fa)}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:17px 6%;display:flex;justify-content:space-between;align-items:center;background:#0b080bcc;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff12}.logo{font-weight:700}.logo b{color:#ff9fbe}nav a{color:#d9c5cc;text-decoration:none;margin-left:22px;font-size:13px}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 20px 70px;position:relative}.hero:after{content:"";position:absolute;width:520px;height:520px;background:#c84478;filter:blur(150px);opacity:.18;z-index:0}.hero>*{position:relative;z-index:1}.eyebrow{color:#ffabc7;text-transform:uppercase;letter-spacing:4px;font-size:11px}.hero h1{font:600 clamp(65px,12vw,150px)/.84 "Playfair Display",serif;letter-spacing:-6px;margin:22px 0}.hero h1 span{display:block;color:#ff8fb5}.hero p{max-width:620px;margin:30px auto;color:#ceb7c1;line-height:1.8;font-size:17px}.scroll{color:#9d8590;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-top:42px}
+section.light{color:#321d29;background:#fff7fa;padding:110px 6%}.title{font:600 clamp(42px,6vw,70px)/1 "Playfair Display",serif;text-align:center;margin:0 0 15px}.sub{text-align:center;color:#806271;max-width:600px;margin:0 auto 48px;line-height:1.7}
+.letter{max-width:850px;margin:auto;background:#fff;border:1px solid #f0dce5;border-radius:30px;padding:clamp(28px,6vw,65px);box-shadow:0 30px 80px #6c234415}.letter p{font:20px/1.9 "Playfair Display",serif;color:#513240;margin:0 0 18px}.letter .big{font-size:25px}
+.reasons{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.reason{padding:30px;border:1px solid #eedbe3;border-radius:25px;background:#fff;min-height:200px}.reason .emoji{font-size:30px}.reason h3{margin:18px 0 8px}.reason p{color:#7b5e6a;line-height:1.65;font-size:14px}
+.timeline{max-width:760px;margin:auto;border-left:2px solid #e7b4c8;padding-left:28px}.moment{position:relative;background:#fff;border:1px solid #eedbe3;border-radius:22px;padding:23px;margin-bottom:20px}.moment:before{content:"";position:absolute;left:-35px;top:27px;width:12px;height:12px;border-radius:50%;background:#c84877;box-shadow:0 0 0 6px #fff7fa}.moment small{color:#b0476c;font-weight:700;letter-spacing:1px}.moment h3{margin:8px 0}.moment p{color:#765765;line-height:1.6;margin:0}
+.secret{max-width:760px;margin:auto;text-align:center}.secretbox{margin-top:35px;padding:45px 25px;border-radius:28px;background:#321d29;color:#fff;cursor:pointer;transition:.3s}.secretbox:hover{transform:translateY(-4px);box-shadow:0 25px 60px #321d2940}.secretmsg{font:600 32px "Playfair Display",serif;color:#ffb2ca;line-height:1.35}.hint{color:#d8c3cc;font-size:13px;margin-top:10px}
+.final{min-height:90svh;background:#321d29;color:#fff;text-align:center;padding:120px 22px;display:grid;place-items:center}.final h2{font:600 clamp(48px,8vw,90px)/.95 "Playfair Display",serif;margin:0 0 25px}.final p{max-width:620px;color:#e2cfd7;line-height:1.8}.signature{font:28px "Playfair Display",serif;color:#ffabc7;margin-top:30px}
+footer{text-align:center;background:#321d29;color:#927481;padding:25px;font-size:11px}
+.heart{position:fixed;pointer-events:none;z-index:60;animation:rise 3.5s linear forwards}@keyframes rise{0%{transform:translateY(0) scale(.7);opacity:0}15%{opacity:1}100%{transform:translateY(-100vh) translateX(var(--x)) rotate(25deg) scale(1.3);opacity:0}}
+.spark{position:fixed;z-index:55;pointer-events:none;width:5px;height:5px;border-radius:50%;background:#ffd2df;animation:fall 1.7s ease-out forwards}@keyframes fall{to{transform:translate(var(--x),var(--y));opacity:0}}
+@media(max-width:700px){nav a{display:none}.reasons{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}.letter p{font-size:18px}.letter .big{font-size:22px}}
+.chat-memories{
+    font-family:"DM Sans",sans-serif !important;
+    padding:clamp(25px,5vw,55px) !important;
+}
+
+.chat-label{
+    text-align:center;
+    color:#a85b78;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:28px;
+}
+
+.chat-label.second{
+    margin-top:55px;
+}
+
+.bubble{
+    max-width:75%;
+    padding:15px 19px;
+    margin:14px 0;
+    border-radius:20px;
+    font-family:"DM Sans",sans-serif;
+    font-size:15px;
+    line-height:1.6;
+    box-shadow:0 5px 18px rgba(80,30,55,.06);
+}
+
+.bubble.her{
+    margin-right:auto;
+    background:#fff0f5;
+    border-bottom-left-radius:5px;
+    color:#613747;
+}
+
+.bubble.me{
+    margin-left:auto;
+    background:#321d29;
+    color:#fff;
+    border-bottom-right-radius:5px;
+}
+
+.chat-ending{
+    text-align:center;
+    margin-top:50px;
+    font-family:"Playfair Display",serif;
+    font-size:22px;
+    line-height:1.7;
+    color:#6b4353;
+}
+
+.chat-ending span{
+    color:#c34d77;
+}
+
+@media(max-width:700px){
+    .bubble{
+        max-width:88%;
+        font-size:14px;
+    }
+}
+</style>
+</head>
+<body>
+    <audio id="bgMusic" loop>
+    <source src="o-sanam_VbTLmmWh.mp3" type="audio/mpeg">
+</audio>
+<div id="intro">
+ <div class="introbox">
+  <div class="tiny">a little something for you</div>
+  <h1>For my<br><span style="color:#ff9fbe">Puchuuuu</span> 🎀</h1>
+  <p>I made this instead of just saying it.</p>
+  <button class="open" onclick="openSite()">Tap to open ❤️</button>
+ </div>
+</div>
+
+<div id="site" class="hidden">
+<nav><div class="logo">for my <b>puchuuuu</b> ♥</div><div><a href="#letter">Letter</a><a href="#us">Us</a><a href="#secret">Secret</a></div></nav>
+
+<section class="hero">
+ <div>
+  <div class="eyebrow">August 31 · your day</div>
+  <h1>Happy Birthday<br><span>meri jaanuuuu</span></h1>
+  <p>A whole little website for the girl who somehow became one of the most beautiful parts of my life. 🥹❤️</p>
+  <div class="scroll">↓ keep scrolling, birthday girl</div>
+ </div>
+</section>
+
+<section class="light" id="letter">
+ <<h2 class="title">Little pieces of us</h2>
+<p class="sub">I went through our chats and found some of my favourite little moments. 🥹❤️</p>
+ <div class="letter chat-memories">
+
+  <div class="chat-label">some things you've said to me 💗</div>
+
+  <div class="bubble her">
+    "Aap toh mere jaan se v badkar ho ....<br>
+    Yehh diamond aur gold sab fika hai apke aage 🥺❤️"
+  </div>
+
+  <div class="bubble me">
+    "Mere liye Aapke aage toh puri duniya fiki hai ❤️"
+  </div>
+
+  <div class="bubble her">
+    "Aadat ho gya hai apki 😭❤️"
+  </div>
+
+  <div class="bubble her">
+    "Kuch v ho jaye bas mere sath rehna 🥺"
+  </div>
+
+  <div class="bubble her">
+    "Kunuuu mujhe chhod k mat janaa 😭"
+  </div>
+
+  <div class="bubble me">
+    "Mei apko chhod k kyun jaungaa ❤️"
+  </div>
+
+  <div class="bubble me">
+    "Aap toh jaan ho meri 🫂❤️"
+  </div>
+
+  <div class="chat-label second">and then there are the tiny moments...</div>
+
+  <div class="bubble her">
+    "Aaa jao naa jaldiii 🥺"
+  </div>
+
+  <div class="bubble her">
+    "Babeee kidharr gye 😭"
+  </div>
+
+  <div class="bubble me">
+    "Gulu morning puchuuuu 😚💗"
+  </div>
+
+  <div class="bubble me">
+    "I love you tooooo puchuuu 😘💗"
+  </div>
+
+  <div class="chat-ending">
+    Maybe these are just messages...<br>
+    <span>but they're some of my favourite memories. ❤️</span>
+  </div>
+
+</div>
+</section>
+
+<section class="light" id="us">
+ <h2 class="title">Our little universe</h2>
+ <p class="sub">No photos needed. Some memories are better described by how they feel.</p>
+ <div class="reasons">
+  <div class="reason"><div class="emoji">🫶🏻</div><h3>“Jaanuuu”</h3><p>That one word somehow became its own little language between us.</p></div>
+  <div class="reason"><div class="emoji">😭</div><h3>Our stupid moments</h3><p>The teasing, random conversations and completely unnecessary drama that somehow make everything fun.</p></div>
+  <div class="reason"><div class="emoji">🫂</div><h3>Always here</h3><p>Even when things aren't perfect, I want you to know your kunuu is still right here.</p></div>
+ </div>
+</section>
+
+<section class="light">
+ <h2 class="title">Three wishes for you</h2>
+ <p class="sub">If I could wrap these up and give them to you, I would.</p>
+ <div class="timeline">
+  <div class="moment"><small>01 · HAPPINESS</small><h3>Laugh a lot. 🌸</h3><p>May you always have reasons to smile, even on the most random days.</p></div>
+  <div class="moment"><small>02 · DREAMS</small><h3>Get everything you want. ✨</h3><p>May every dream you've been quietly carrying find its way into your life.</p></div>
+  <div class="moment"><small>03 · LOVE</small><h3>Never forget you're loved. ❤️</h3><p>On the good days and the bad ones, I hope you always remember how much you mean to me.</p></div>
+ </div>
+</section>
+
+<section class="light" id="secret">
+ <div class="secret">
+  <h2 class="title">One last thing…</h2>
+  <p class="sub">I hid something here. Because obviously one surprise wasn't enough. 😭</p>
+  <div class="secretbox" onclick="reveal()">
+   <div id="secretText" class="secretmsg">Tap me 👀</div>
+   <div class="hint" id="hint">there's a message underneath</div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div>
+  <div class="eyebrow">for the birthday girl</div>
+  <h2>You're my<br>favourite person. ❤️</h2>
+  <p>Happy birthday, meri jaan. Thank you for being you, for being in my life, and for giving me so many little reasons to smile. Aaj ka din sirf aapka hai — so go be the happiest girl ever. 🥹🫂</p>
+  <div class="signature">Lobbb youuuuu jaanuuuuuu ❤️</div>
+ </div>
+</section>
+<footer>made with love, chaos & way too many hearts · 🎀</footer>
+</div>
+
+<script>
+function openSite(){
+    const music = document.getElementById("bgMusic");
+
+    music.volume = 0.4;
+    music.play();
+
+    document.getElementById("intro").style.opacity="0";
+    document.getElementById("intro").style.transition="opacity .7s ease";
+
+    setTimeout(()=>{
+        document.getElementById("intro").remove();
+        document.getElementById("site").classList.remove("hidden");
+        burst();
+    },700);
+}
+function heart(){
+ const e=document.createElement("div");e.className="heart";e.textContent=["❤️","💗","💖","💕","✨"][Math.floor(Math.random()*5)];
+ e.style.left=Math.random()*100+"vw";e.style.bottom="-30px";e.style.fontSize=(15+Math.random()*25)+"px";e.style.setProperty("--x",(Math.random()*180-90)+"px");
+ document.body.appendChild(e);setTimeout(()=>e.remove(),3600);
+}
+function burst(){for(let i=0;i<30;i++)setTimeout(heart,i*70)}
+function reveal(){
+ const s=document.getElementById("secretText"),h=document.getElementById("hint");
+ s.textContent="Meri puchuuu, agar duniya mein mujhe dobara choose karna pade… main phir bhi aapko hi choose karunga. ❤️";
+ h.textContent="Bas. Ab ro mat. 😭🫂";
+ burst();
+}
+</script>
+</body>
+</html>
